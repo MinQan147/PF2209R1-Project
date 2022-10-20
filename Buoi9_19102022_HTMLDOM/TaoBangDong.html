@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="ket_qua">
+        <table id="bang" border="1" cellspacing ="0" cellpadding="5">
+            <thead>
+                <tr>
+                    <td>#</td>
+                    <td>Họ và tên</td>
+                </tr>
+            </thead>
+            <tbody id="noi_dung_bang"></tbody>
+        </table>
+        
+    </div>
+    <button type="button" onclick="themDong()">Thêm 1 dòng</button>
+    <button type="button" onclick="xoaContent()">Xóa bảng</button>
+    <script>
+        function themDong(){
+            let dong = document.createElement('tr');
+            let o_1 = document.createElement('td');
+            let o_2 = document.createElement('td');
+            o_1.innerHTML = "STT";
+            o_2.innerHTML = "Nguyễn Minh Quân";
+            dong.appendChild(o_1);
+            dong.appendChild(o_2);
+
+            document.getElementById('noi_dung_bang').appendChild(dong);
+        }
+
+        function xoaContent() {
+            document.getElementById('noi_dung_bang').innerHTML = '';
+        }
+    </script>
+</body>
+</html>

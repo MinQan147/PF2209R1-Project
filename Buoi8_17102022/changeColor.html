@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="body">
+    <script>
+        function changeBlue() {
+            document.getElementById("body").style.backgroundColor = 'blue';
+        }
+        function changeColor(color) {
+            document.getElementById("body").style.backgroundColor = color;
+        }
+    </script>
+    <div>
+        <button id="btnBlue" type="button" onclick="changeBlue()">Blue</button>
+        <button id="btnRed" type="button" onclick="changeColor('red')">Red</button>
+        <button id="btnGreen" type="button" onclick="changeColor('green')">Green</button>
+    </div>
+</body>
+</html>
