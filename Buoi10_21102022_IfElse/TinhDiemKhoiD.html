@@ -24,6 +24,19 @@
         <option value="0">KV3</option>
     </select>
     <br>
-    <button type="button">Tính điểm</button> 
+    <button type="button" onclick="TinhDiem()">Tính điểm</button> 
+    <br>
+    <div id="KetQua"></div>
+    <script>
+        function TinhDiem() {
+            let toan = parseFloat(document.getElementById("DiemToan").value);
+            let anh = parseFloat(document.getElementById("DiemAnh").value);
+            let van = parseFloat(document.getElementById("DiemVan").value);
+            let diemKhuVuc = parseFloat(document.getElementById("KhuVuc").value);
+            let tongDiem = toan + anh + van + diemKhuVuc;
+            alert(tonhDiem);
+            document.getElementById("KetQua").innerHTML = `Tổng điểm đại học khối D là ${tongDiem}`;
+        }
+    </script>
 </body>
 </html>
