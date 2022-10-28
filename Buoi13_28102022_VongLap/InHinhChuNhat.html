@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Vẽ hình chữ nhật</h1>
+    Nhập số dòng:
+    <input type="number" id="so_dong" /><br>
+    Nhập số cột:
+    <input type="number" id="so_cot" /><br>
+    <button type="button" onclick="ve_hinh_chu_nhat()">Vẽ hình chữ nhật</button>
+    <div id="ket_qua"></div>
+    <script>
+        // snake_case
+        function ve_hinh_chu_nhat() {
+            let chuoi = "";
+            let so_dong = parseInt(document.getElementById("so_dong").value);
+            let so_cot = parseInt(document.getElementById("so_cot").value);
+            for (let i = 0; i < so_dong; i++) {
+                for(let j = 1; j <= so_cot; j++) {
+                    chuoi += "*";
+                }
+                chuoi += "<br>";
+            }
+            document.getElementById("ket_qua").innerHTML = chuoi;
+        }
+    </script>
+</body>
+</html>
