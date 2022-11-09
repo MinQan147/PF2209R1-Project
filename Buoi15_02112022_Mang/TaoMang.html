@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Ví dụ Mảng</h1>
+    <div>
+        <input id="soNhap" type="number"/>
+        <button type="button" onclick="them_phan_tu ()">add</button>
+        <button type="button" onclick="hien_thi()">Display</button>
+    </div>
+    <hr>
+    <div id="ketQua"></div>
+    <script>
+        let mang = new Array();
+        function them_phan_tu (){
+            let nhap = document.getElementById('soNhap');
+            mang.push(parseInt(soNhap.value));
+            console.log(mang);
+            soNhap.value = "";
+            //đưa dấu trỏ chuột vào ô nhập liệu
+            soNhap.focus();
+        }
+
+        function hien_thi (){
+            let chuoi = "";
+            for (let i in mang) {
+                chuoi += `Element ${i} = ${mang[i]} <br>`;
+            }
+
+            document.getElementById('ketQua').innerHTML = chuoi;
+        }
+    </script>
+</body>
+</html>
