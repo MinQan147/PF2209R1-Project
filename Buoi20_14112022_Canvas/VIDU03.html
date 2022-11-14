@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="400" height="300" style="border: 1px solid red;">
+        Your browser doesn't support canvas
+    </canvas>
+    <script>
+        let c = document.getElementById("myCanvas");
+        let ctx = c.getContext("2d");
+        
+        ctx.beginPath();
+        ctx.arc(110, 100, 50, 0, 3 * Math.PI);
+        ctx.arc(150, 145, 50, 0, 2 * Math.PI);
+        ctx.arc(190, 100, 50, 0, 2 * Math.PI);
+        ctx.arc(230, 145, 50, 0, 2 * Math.PI);
+        ctx.arc(270, 100, 50, 0, 2 * Math.PI);
+        ctx.lineWidth = 4;
+        ctx.stroke();
+    </script>
+</body>
+</html>

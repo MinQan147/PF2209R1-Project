@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function ngoiSao(starsName) {
+            let sao = [
+                "Ursa Minor",
+                "Tarurus",
+                "Cygnus",
+                "Lyra",
+                "Aquila",
+                "Ursa Major",
+                "Leo"
+            ];
+            let cacSao = [
+                "Polaris",
+                "Aldebaran",
+                "Deneb",
+                "Vega",
+                "Altair",
+                "Dubhe",
+                "Regulus"
+            ];
+            for (let i = 0; i <= stars.length;i++) {
+                if (starsName === stars[i]) {
+                    stars[i] === star[i];  
+                    return (star[i]);                
+                }                               
+            } 
+            return ("Không có trong mảng tên sao")
+        } 
+        let starsName1 = prompt("Tên của ngôi sao?: ");
+        document.write(ngoiSao(starsName1));
+        </script>
+</body>
+</html>

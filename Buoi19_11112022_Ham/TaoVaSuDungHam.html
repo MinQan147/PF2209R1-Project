@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Nhập tham số</h2>
+    Nhập số a: 
+    <input type="number" id="a"/>
+    <br>
+    Nhập số b:
+    <input type="number" id="b"/>
+    <br>
+    <br>
+    <button type="button" onclick="nhapThamSo()">Kiểm tra</button>
+    <script>
+        function nhanThamSo(){
+            a = document.getElementById('a').innerHTML;
+            b = document.getElementById('a').innerHTML;
+            let tong = a + b;
+            if(a > b) {
+                alert('a lớn hơn b');
+            }
+            else {
+                alert('Tổng 2 tham số là: ' + tong);
+            }
+        }
+    </script>
+</body>
+</html>
