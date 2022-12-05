@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Quản Lý Sách</title>
+	<link rel="stylesheet" href="main.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="main.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="heading">
+			Quản Lý Sách
+		</div>
+		<div class="body">
+			<form method="post" onsubmit="return saveData()">
+				<label>Mã Sách: </label>
+				<input required type="text" name="maSach" id="masach" placeholder="Nhập mã sách">
+				<label>Tên Sách: </label>
+				<input required type="text" name="tenSach" id="tensach" placeholder="Nhập tên sách">
+				<label>Thể Loại: </label>
+				<input required type="text" name="theLoai" id="theloai" placeholder="Nhập thể loại">
+				<label>Ngày Nhập: </label>
+				<input required type="date" name="ngayNhap" id="ngaynhap" placeholder="Nhập ngày nhập sách">
+				<label>Số Lượng: </label>
+				<input required type="number" name="soLuong" min="1" id="soluong" placeholder="Nhập số lượng">
+				<label>Giá bán: </label>
+				<input required type="number" name="giaBan" id="giaban" placeholder="Nhập giá">
+				<button type="submit" class="btn-success">Save</button>
+				<button type="reset" class="btn-reset">Reset</button>		
+			</form>
+		</div>
+	</div>
+
+	<div class="container">
+		<table border="1" style="width: 100%;">
+			<thead class="heading">
+				<tr>
+					<th>STT</th>
+					<th>Mã Sách</th>
+					<th>Tên Sách</th>
+					<th>Thể Loại</th>
+					<th>Ngày Nhập</th>
+					<th>Số Lượng</th>
+					<th>Giá Bán</th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody id="result"></tbody>
+		</table>
+	</div>
+</body>
+</html>

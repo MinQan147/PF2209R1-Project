@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <div>
         Cần nạp: <input id="mucPinNap" type="number" min="1" />
@@ -23,5 +25,64 @@
             Battery: <span id="batteryEnergy"></span>
         </div>
     </fieldset>
+    <script>
+        class Battery {
+            constructor() {
+                this.energy = 0;
+            }
+
+            setEnergy(energy) {
+                this.energy = energy;
+            };
+
+            getEnergy() {
+                return this.energy;
+            };
+
+            decreaseEnergy() {
+                if (this.energy > 0) {
+                    this.energy--;
+                }
+            }
+
+            increaseEnergy(eNum) {
+                this.energy += eNum;
+            }
+        };
+
+        class FlashLamp {
+            constructor() { }
+
+            setBattery(battery) {
+                this.battery = battery;
+            };
+
+            getBatteryInfo() {
+                return this.battery.getEnergy();
+            };
+
+            light() {
+                if (this.status) {
+                    alert("Lighting");
+                } else {
+                    alert("Not lighting");
+                }
+            };
+
+            turnOn() {
+                this.status = true;
+            };
+
+            turnOff() {
+                this.status = false;
+            }
+        };
+
+        let myBattery = new Battery();
+        let myLamp = new FlashLamp();
+        myLamp.setBattery(energy);
+        console.log(myLamp.getBatteryInfo(),)
+    </script>
 </body>
+
 </html>

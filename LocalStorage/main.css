@@ -1,0 +1,86 @@
+.container {
+    width: 640px;
+    margin: 0px auto;
+    border: solid #d6d6d6 1px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 5px 5px 4px #ccc;
+}
+
+.container .heading {
+    font-size:  20px;
+    text-align: center;
+    background-color: #0083ff;
+    color: white;
+    padding: 15px;
+    font-weight: bold;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.container .body label, .container .body input {
+    width: 94%;
+    margin-bottom: 15px;
+    font-size: 15px;
+    margin: 5px 15px 15px 15px;
+}
+
+.container .body button {
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+.btn-success {
+    width: 20%;
+    background-color: white;
+    margin-left: 15px;
+    border: none;
+    padding: 5px;
+    color: #28a745;
+    border-radius: 4px;
+}
+
+.btn-success:hover {
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-warning {
+    background-color: white;
+    /* margin-left: 5px; */
+    border: none;
+    padding: 5px;
+    color: orange;
+    border-radius: 4px;
+}
+
+.btn-reset {
+    width: 20%;
+    background-color: white;
+    border: none;
+    padding: 5px;
+    color: orange;
+    border-radius: 4px;
+}
+
+.btn-reset:hover, .btn-warning:hover {
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-danger {
+    background-color: white;
+    /* margin-left: 5px; */
+    border: none;
+    padding: 5px;
+    color: red;
+    border-radius: 4px;
+}
+
+.btn-danger:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
